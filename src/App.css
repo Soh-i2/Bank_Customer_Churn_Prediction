@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-image: url('images/b3.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+    color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    max-width: 600px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.form-group label {
+    font-weight: bold;
+    color: #495057;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-group input[type="number"],
+.form-group input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    margin-top: 5px;
+    transition: border-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.form-group input[type="number"]:focus,
+.form-group input[type="text"]:focus {
+    border-color: #28a745;
+    outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #01060c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #576069;
+}
+
+.mt-5.text-center {
+    margin-top: 30px;
+}
+
+.mt-5.text-center h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.text-danger {
+    color: #dc3545 !important;
 }
